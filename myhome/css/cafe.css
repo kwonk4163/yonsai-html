@@ -1,0 +1,51 @@
+.content {width: 900px; margin-left: auto; margin-right: auto;}
+
+/*.content table,*/
+.content table th,
+.content table td {
+    border: 1px solid lightgrey;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.content table th {background-color: yellow;}
+
+.content table td.title {text-align: left;}
+
+/* 상세페이지 시작 */
+.content div.title {font-size: 2em; }
+
+.content table {border-collapse: collapse; width: 100%; }
+
+.content table .sn{width: 45px;}
+/* .content table .title{width: auto;} */
+.content table .author{width: 79px;}
+.content table .created{width: 60px;}
+.content table .attached{width: 64px;}
+
+.font08 {font-size: 0.8em}
+.font2 
+
+/* 상세페이지 시작 */
+.content div.title {font-size: 2em; }
+.content .info {margin-top: 1em; margin-bottom: 1em; }
+.content .info span {color:rgb(143, 131, 131)}
+/* 상세페이지 끝 */
+
+.space {width: 2em; display: inline-block;}
+.write span {width: 10em; color: limegreen; }
+
+.content .menu {text-align: center; border-top: 1px solid lightslategray; margin-top: 24px; }
+.content .menu button {background-color: lightgray; padding: 12px 15px; border: none; border-radius: 3px; }
+/* padding 1.(위쪽높이) 2.(아래) 3.(좌측) 4.(우측) */
+.content .menu span {font-size: 15px; color: rgb(72, 81, 87); }
+
+/* 삭제 페이지 시작*/
+.notice {
+    width: 450px; margin: auto; color: white; background-color: #333; border-radius: 6px; }
+.notice p {padding: 10px 15px; text-align: center; color:skyblue;}    
+.notice p::before {content: "["}   
+.notice p::after {content: "]"}    
+.notice div {text-align: center; padding: 15px;}
+.notice .bt button {border-radius: 3px; background-color: thistle;}
+/* 삭제 페이지 끝 */

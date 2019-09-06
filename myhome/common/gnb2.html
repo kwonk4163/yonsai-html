@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>가로메뉴바</title>
+    <style>
+      .gnb li {float:left;}  
+      .gnb .float_r {float:right;}
+      .gnb li a{display:block; color:white;
+        text-align: center; padding: 15px 80px; /*padding=15px(메뉴바높이) 80px=메뉴글자 사이의 간격*/
+        text-decoration: none;
+      }
+      .gnb li a:hover{
+          background-color: green;
+      }
+      .gnb {list-style-type: none;
+           margin: 0; padding:0; overflow: hidden;
+           background-color:#333;
+    }
+    </style>
+</head>
+<body>
+    <ul class="gnb">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">계산기</a></li>
+        <li><a href="#">게시글</a></li>
+        <li><a href="#">사이트맵</a></li>
+        <li class="float_r"><a href="#">로그인</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body section button {width:200px; height: 125px; border: 1px; margin-top: 10px; border-radius: 10px;}
+    body section  div {font-size: 30px; font-family: 'Nanum Pen Script', cursive;}
+    </style>
+</head>
+<body>
+    <section>
+        <h1>마우스를 드래그하면 색깔이 나타납니다.</h1>
+        <button id="demo" onmouseover="myFn(true)" onmouseout="myFn(false)" ><div>red</div></button>
+        <button id="demo2" onmouseover="myFn2(true)" onmouseout="myFn2(false)" ><div>orange</div></button>
+        <button id="demo3" onmouseover="myFn3(true)" onmouseout="myFn3(false)" ><div>yellow</div></button>
+        <button id="demo4" onmouseover="myFn4(true)" onmouseout="myFn4(false)" ><div>green</div></button><br>
+        <button id="demo5" onmouseover="myFn5(true)" onmouseout="myFn5(false)" ><div>blue</div></button>
+        <button id="demo6" onmouseover="myFn6(true)" onmouseout="myFn6(false)" ><div>navy</div></button>
+        <button id="demo7" onmouseover="myFn7(true)" onmouseout="myFn7(false)" ><div>pupple</div></button>
+        <button id="demo8" onmouseover="myFn8(true)" onmouseout="myFn8(false)" ><div>dark</div></button><br>
+        <button id="demo9" onmouseover="myFn9(true)" onmouseout="myFn9(false)" ><div>grey</div></button>
+        <button id="demo10" onmouseover="myFn10(true)" onmouseout="myFn10(false)" ><div>pink</div></button>
+        <button id="demo11" onmouseover="myFn11(true)" onmouseout="myFn11(false)" ><div>brown</div></button>
+        <button id="demo12" onmouseover="myFn12(true)" onmouseout="myFn12(false)" ><div>mint</div></button><br>
+        <button id="demo13" onmouseover="myFn13(true)" onmouseout="myFn13(false)" ><div>cobaltblue</div></button>
+        <button id="demo14" onmouseover="myFn14(true)" onmouseout="myFn14(false)" ><div>Emerald</div></button>
+        <button id="demo15" onmouseover="myFn15(true)" onmouseout="myFn15(false)" ><div>lime</div></button>
+        <button id="demo16" onmouseover="myFn16(true)" onmouseout="myFn16(false)" ><div>rose</div></button> 
+    </section>
+    <script>
+        function myFn(param) {
+            var el=document.getElementById("demo");
+            if(param) {
+                el.style.backgroundColor="red";
+                
+            }else{
+                    el.style.backgroundColor= "";
+                }
+            }
+            // red
+            function myFn2(param2) {
+            var el=document.getElementById("demo2");
+            if(param2) {
+                el.style.backgroundColor="orange";
+            }else{
+                    el.style.backgroundColor= "";
+                }
+            }
+           //orange
+           function myFn3(param3) {
+            var el=document.getElementById("demo3");
+            if(param3) {
+                el.style.backgroundColor="yellow";
+            }else{
+                    el.style.backgroundColor= "";
+                }
+            }
+           //yellow
+           function myFn4(param4) {
+            var el=document.getElementById("demo4");
+            if(param4) {
+                el.style.backgroundColor="green";
+            }else{
+                    el.style.backgroundColor= "";
+                }
+            }
+            //green
+            function myFn5(param5) {
+            var el=document.getElementById("demo5");
+            if(param5) {
+                el.style.backgroundColor="blue";
+            }else{
+                    el.style.backgroundColor= "";
+                }
+            }
+            // blue
+            function myFn6(param6) {
+            var el=document.getElementById("demo6");
+            if(param6) {
+                el.style.backgroundColor="navy";
+            }else{
+                    el.style.backgroundColor= "";
+                }
+            }
+           //navy
+           function myFn7(param7) {
+            var el=document.getElementById("demo7");
+            if(param7) {
+                el.style.backgroundColor="violet";
+            }else{
+                    el.style.backgroundColor= "";
+                }
+            }
+        //violet
+        function myFn8(param8) {
+            var el=document.getElementById("demo8");
+            if(param8) {
+                el.style.backgroundColor="black";
+            }else{
+                    el.style.backgroundColor= "";
+                }
+            }
+            //black
+            function myFn9(param9) {
+            var el=document.getElementById("demo9");
+            if(param9) {
+                el.style.backgroundColor="grey";
+            }else{
+                    el.style.backgroundColor= "";
+                }
+            }
+            //grey
+            function myFn10(param10) {
+            var el=document.getElementById("demo10");
+            if(param10) {
+                el.style.backgroundColor="#ffc0cb";
+            }else{
+                    el.style.backgroundColor= "";
+                }
+            }
+            // pink
+            function myFn11(param11) {
+            var el=document.getElementById("demo11");
+            if(param11) {
+                el.style.backgroundColor="#964b00";
+            }else{
+                    el.style.backgroundColor= "";
+                }
+            }
+            // brown
+            function myFn12(param12) {
+            var el=document.getElementById("demo12");
+            if(param12) {
+                el.style.backgroundColor="#3eb489";
+            }else{
+                    el.style.backgroundColor= "";
+                }
+            }
+            //  mint
+            function myFn13(param13) {
+            var el=document.getElementById("demo13");
+            if(param13) {
+                el.style.backgroundColor="#00498c";
+            }else{
+                    el.style.backgroundColor= "";
+                }
+            }
+            // kobaltblue
+            function myFn14(param14) {
+            var el=document.getElementById("demo14");
+            if(param14) {
+                el.style.backgroundColor=" #008d62";
+            }else{
+                    el.style.backgroundColor= "";
+                }
+            }
+            // 에메랄드
+            function myFn15(param15) {
+            var el=document.getElementById("demo15");
+            if(param15) {
+                el.style.backgroundColor="#bfff00";
+            }else{
+                    el.style.backgroundColor= "";
+                }
+            }
+            // 라임
+            function myFn16(param16) {
+            var el=document.getElementById("demo16");
+            if(param16) {
+                el.style.backgroundColor="#8d192b";
+            }else{
+                    el.style.backgroundColor= "";
+                }
+            }
+            // rose
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body  td {width:200px; height: 125px; border: 1px; border-radius: 11px; background-color: #b4b4b4; margin-left: auto; margin-right: auto;	 }
+    body td p {text-align: center; font-size: 25px; font-family: 'Nanum Pen Script', cursive;}
+    </style>
+</head>
+<body>
+    <!-- table>tr*4>td*4 -->
+<table>
+<tr>
+        <td onmouseover="overFn(this)" onmouseout="outFn(this)" ><p>lime</p></td>
+        <td onmouseover="overFn(this)" onmouseout="outFn(this)" ><p>darkgrey</p></td>
+        <td onmouseover="overFn(this)" onmouseout="outFn(this)" ><p>navy</p></td>
+        <td onmouseover="overFn(this)" onmouseout="outFn(this)" ><p>violet</p></td>
+</tr>
+
+<tr>
+        <td onmouseover="overFn(this)" onmouseout="outFn(this)" ><p>limegreen</p></td>
+        <td onmouseover="overFn(this)" onmouseout="outFn(this)" ><p>green</p></td>
+        <td onmouseover="overFn(this)" onmouseout="outFn(this)" ><p>yellow</p></td>
+        <td onmouseover="overFn(this)" onmouseout="outFn(this)" ><p>darkkhaki</p></td>
+</tr>
+
+ <tr>
+        <td onmouseover="overFn(this)" onmouseout="outFn(this)" ><p>pink</p></td>
+        <td onmouseover="overFn(this)" onmouseout="outFn(this)" ><p>gold</p></td>
+        <td onmouseover="overFn(this)" onmouseout="outFn(this)" ><p>silver</p></td>
+        <td onmouseover="overFn(this)" onmouseout="outFn(this)" ><p>orange</p></td>
+</tr>
+
+<tr>
+<td onmouseover="overFn(this)" onmouseout="outFn(this)" ><p>red</p></td>
+<td onmouseover="overFn(this)" onmouseout="outFn(this)"><p>grey</p></td>
+<td onmouseover="overFn(this)" onmouseout="outFn(this)" ><p>blue</p></td>
+<td onmouseover="overFn(this)" onmouseout="outFn(this)" ><p>darkkhaki</p></td>
+</tr>
+<!-- this는 overFn에 있는 함수를 의미한다. -->
+<script>
+function overFn(param) {
+var param = param;
+var webColor = param.textContent;
+param.style.backgroundColor=webColor;
+}
+function outFn(param) {
+    var el =param;
+    var webColor =""
+    el.style.backgroundColor=webColor;
+
+}
+</script>
+
+
+
+
+</table>   
+</body>
+</html>

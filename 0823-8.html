@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex레이아웃</title>
+    <style>
+        .flex-container {
+            display: -wekbit-flex; 
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap:wrap;
+            align-items: center;
+
+            /*flex-wrap:wrap;
+            align-items: center; */         /*이 두개를 같이 사용해주면 align-items를 이용하여 중앙으로 정렬가능*/
+
+            /*nowrap(기본), wrap, wrap-reverse */
+            /*stretch, flex-start-container, flex-end(맨아래로),center(중앙정렬), baseline(해당되는 글씨에 밑선에 맞춰짐) */
+            /* flex-start(기본값), flex-end(우축정렬), center(중앙으로), space-between(각아이템이 동일한 간격), space-around*/
+           /* flex-direction: row-reverse; */
+           /* row(기본값), row-reverse, colunm-reverse */
+            width: 250px; height:250px;
+            background-color: lightgray;
+            float:left;
+            margin-right:2px; 
+            box-sizing: border-box;
+            border:1px solid grey;
+        }
+        .flex-item{
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            text-align:center;
+            line-height:50px;
+            color: white
+        }
+        .font2em { font-size:2em;}
+
+        .first {margin:auto }   /*컨테이너 숫자2에다가 -1을줌으로써 아이템순서바꿈 */
+        .item1 {align-self:flex-start;}
+        .item2 {align-self:end;}
+        .item3 {align-self:flex-end;}
+    </style>
+</head>
+<body>
+        <div class="flex-container">
+                <div class="flex-item item1">1</div>
+                <div class="flex-item item2 font2em first">2</div>
+                <div class="flex-item item3">3</div>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item font2em first">2</div>
+                <div class="flex-item">3</div>
+                <div class="flex-item">4</div>
+                <div class="flex-item">5</div>
+            </div>
+            <ul>
+                <li>IE11, chome29.0, firefox22.0 최신 버전의 브라우져만 지원</li>
+            </ul
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>이벤트</h1>
+        <h2>onmouseover / onmouseout</h2>
+        <p id="demo" onmouseover="myFn()">마우스를 올리면 배경색이 바뀜.</p>
+        <p id="demo2" onmouseover="myFn2(true)" onmouseout="myFn2(false)">마우스를 떼면 색이사라짐</p>
+    </section>
+    <script>
+    function myFn() {
+        var el;
+        el =document.getElementById("demo");
+        el.style.backgroundColor= "blue";
+    }
+    function myFn2(param) {
+        var el = document.getElementById("demo2");
+        if(param) {
+            el.style.backgroundColor= "blue";
+        }else{
+                el.style.backgroundColor = "";
+            }
+        }
+
+    
+    </script>
+</body>
+</html>

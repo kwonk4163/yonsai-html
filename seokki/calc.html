@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>가로메뉴바</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href= ../css/calc.css">
+    <style>
+        .gnb li {
+            float: left;
+        }
+
+        .gnb .float_r {
+            float: right;
+        }
+
+        .gnb li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 80px;
+            /*padding=15px(메뉴바높이) 80px=메뉴글자 사이의 간격*/
+            text-decoration: none;
+        }
+
+        .gnb li a:hover {
+            background-color: green;
+        }
+
+        .gnb {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="gnb">
+        <li><a href="/myhome/">홈</a></li>
+        <li><a href="/myhome/portfolio/calc.html">계산기</a></li>
+        <li><a href="/myhome/board/list.html">게시글</a></li>
+        <li><a href="/myhome/sitemap.html">사이트맵</a></li>
+        <li class="float_r"><a href="#">로그인</a></li>
+    </ul>
+    <div class="clearfix"></div>
+    <!--컨텐츠-->
+    <section>
+        <div class="calc">
+            <div class="disp"><h3>25+25+25+25
+                =100
+            </h3></div>
+            <div class="btns">
+                <a href="" class="btn_numb">1</a>
+                <a href="" class="btn_numb">2</a>
+                <a href="" class="btn_numb">3</a>
+                <a href="" class="btn_sign">+</a>
+                <a href="" class="btn_sign">-</a>
+                <a href="" class="btn_numb">4</a>
+                <a href="" class="btn_numb">5</a>
+                <a href="" class="btn_numb">6</a>
+                <a href="" class="btn_sign">X</a>
+                <a href="" class="btn_sign">/</a>
+                <a href="" class="btn_numb">7</a>
+                <a href="" class="btn_numb">8</a>
+                <a href="" class="btn_numb">9</a>
+                <a href="" class="btn_sign">(</a>
+                <a href="" class="btn_sign">)</a>
+                <a href="" class="btn_numb w100">0</a>
+                <a href="" class="btn_sign">←</a>
+                <a href="" class="btn_sign w300">AC</a>
+                <a href="" class="btn_sign w200">=</a>
+              
+                
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

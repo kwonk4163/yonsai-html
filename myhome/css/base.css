@@ -1,0 +1,23 @@
+body{margin:0;}
+
+div, a {box-sizing: border-box;}
+.gnb li {float:left;}  
+      .gnb .float_r {float:right;}
+      .gnb li a{display:block; color:white;
+        text-align: center; padding: 15px 80px; /*padding=15px(메뉴바높이) 80px=메뉴글자 사이의 간격*/
+        text-decoration: none;
+      }
+      .gnb li a:hover{
+          background-color: green;
+      }
+      .gnb {list-style-type: none;
+           margin: 0; padding:0; overflow: hidden;
+           background-color:#333;
+    }
+.clearfix {
+    content: ""; clear: both; display: table;
+}
+
+header a img {
+    width: 50px;
+}

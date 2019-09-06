@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+    #kakaohead{
+        max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
+    }    
+    #kakaoServiceLogo {display: inline-block;
+    width: 88px;
+    height: 27px;
+    margin: 0 auto;
+    line-height: 1;
+    background: url(/assets/weblogin/ico_account.png);
+    vertical-align: top;
+
+}
+
+.ir_wa {overflow: hidden;
+    display: block;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;}
+
+    h1 {
+        font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    }
+
+.account {position: relative;
+    max-width: 580px;
+    min-height: 992px;
+    margin: 40px auto;
+    padding: 70px 69px 139px;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.account .info {
+    margin-bottom: 44px;
+    line-height: 34px;
+    font-weight: normal;
+    font-size: 24px;
+    color: #252525;
+}
+.account .ps_box_id .required {    display: block;
+    margin-top: 40px;
+    font-weight: normal;
+    font-size: 12px;
+    color: #000;
+text-align: left;}
+
+    .account .ps_box_id .input_email   {padding-right: 100px;
+        font-family: NotoSans-Bold,NotoSans-Regular,AppleSDGothicNeo-Regular,"맑은 고딕",Malgun Gothic,"돋움",dotum,sans-serif;
+    font-size: 18px;
+    caret-color: #f7e317;
+    width: 100%;
+    height: 48px;
+    padding: 11px 70px 11px 0;
+    border-width: 0 0 2px 0;
+    border-color: #ebebeb;
+    border-radius: 0;
+    outline: 0;
+    color: #252525;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+position: relative;}
+
+    .account .ps_box_id  {font-family: NotoSans-Bold,NotoSans-Regular,AppleSDGothicNeo-Regular,"맑은 고딕",Malgun Gothic,"돋움",dotum,sans-serif;
+    color: #7c7c7c;
+text-align: }
+.account .step_url {font-size: 12px; color:#999;}
+.account .ps_box_id .daum{position: absolute;
+    font-family: NotoSans-Bold,NotoSans-Regular,AppleSDGothicNeo-Regular,"맑은 고딕",Malgun Gothic,"돋움",dotum,sans-serif;
+    color: #7c7c7c;
+text-align: right;
+font-size: 16px;
+border-collapse: separate;
+line-height: 1.5;}
+
+.account .phone .contry {display: block;
+    height: 48px;
+    line-height: 47px;
+border: 0px;
+position: relative;}
+
+.account .required .input_phonnumb {position: absolute; }
+
+.account .btn_numb .btn {display: inline-block;
+    height: 42px;
+    padding: 0 31px;
+    border: 1px solid #adadad;
+    border-radius: 30px;
+    color: #252525;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: NotoSans-Regular,AppleSDGothicNeo-Regular,"맑은 고딕",Malgun Gothic,"돋움",dotum,sans-serif;
+    font-size: 16px;
+float:right;
+margin-top: 10px;}
+    </style>
+</head>
+<body>
+<div id="kakaohead">
+    <h1 id="kakaoServiceLogo">
+        <span class="ir_wa">kakao</span>
+        <img id="brand" height="30" class="img_logo" alt="kakao" style="display: none;">
+    </div>
+    </h1>
+    
+   <section class="account">
+       
+       
+      <h2 class="info">카카오계정 정보를 입력해주세요</h2>
+
+ 
+        
+           
+                <strong class="required">카카오 계정 이메일</strong>
+                <div class="email">
+                <span class="ps_box_id">
+                <input type="text" name="id" id="id" maxlength="20" class="input_email" >
+                <span class="daum">@daum.net</span>
+                </span>
+                <span class="step_url">•카카오계정으로 사용할 Daum 이메일을 만들어주세요.<br>
+                    •만약 사용중인 Daum메일이 있다면, Daum아이디로 로그인하여 계정을 가입해주세요.</span>
+                 </div>
+          
+            
+
+            <label for="pw"></label>
+            <span class="ps_box_id">
+                <strong class="required">비밀번호</strong>
+                <span class="ps_box_id">
+                <label for="pw"></label>
+                <input type="text" name="" id="pw" maxlength="20" class="input_email" placeholder ="비밀번호(8~32자리)" >
+                <label for="cfpw"></label>
+                <input type="text" name="" id="cfpw" maxlength="20" class="input_email" placeholder="비밀번호 재입력" >
+            </span>
+                <label for="id"></label>
+           
+                <strong class="required">닉네임</strong>
+                <span class="ps_box_id">
+                <input type="text" name="id" id="id" maxlength="20" class="input_email" >
+            </span>
+             
+            <div class="phone">
+
+                <select name="contry" id="contry" class="contry">
+                    <option>+82</option>
+                     <option value="1">+82 대한민국</option>
+                     
+                </select>
+
+            <strong class="required">전화번호</strong>
+            <span class="ps_box_id">
+            <input type="text" name="id" id="id" maxlength="20" class="input_email" >
+
+            <div class="btn_numb">
+                <a href="" class="btn">인증번호 전송</a>
+            </div>
+        </span>
+    </div>
+            
+
+   </section> 
+</body>
+</html>

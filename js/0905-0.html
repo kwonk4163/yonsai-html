@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <p> 임의의 버튼을 두번클릭
+      같은 버튼을 클릭하면 성공
+      다른 버튼을 클릭하면 실패 </p>
+ 
+       <button type="button" onclick="myFn('사과')" >사과</button>
+       <button type="button" onclick="myFn('귤')" >귤</button>
+       <button type="button" onclick="myFn('배')" >배</button>
+
+            
+       <script>
+        //    사용자가 선택한 버튼의 과일 이름을 보관해야한다.
+        var sel1, sel2, cnt=0; 
+        //    입력이 첫번째인지 두번째인가를 구분해야 한다.
+        //    함수 입력한 값이 첫번째 이면 변수1, 두번째 이면 변수2에 넣는다.
+     function myFn(selName) {
+         if (cnt === 0) {
+             sel1= selName;
+             cnt = cnt+1;
+         } else {
+             sel2 = selName;
+             window.alert("")
+             myAlt();
+         }
+     }
+
+     function myAlt() {
+         if(sel1 === sel2){
+             var msg="성공"; //성공           
+             
+         } else {
+            var msg="실패";
+              //  실패 
+         }
+         window.alert("msg");
+
+     }
+      
+    
+       </script>
+    
+</body>
+     
+</html>

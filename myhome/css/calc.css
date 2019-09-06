@@ -1,0 +1,28 @@
+/*div a {border: 1px solid lightgray}*/
+body    {background-image: url("../img/bc.jpg") }
+
+
+.calc {width: 422px; height: 536px; margin: auto; background-color: white; 
+padding-top: 27px; }
+
+.calc .disp {width: 387px; height: 90px; background-color:lightgrey;  margin-left: auto; 
+margin-right: auto; margin-bottom: 15px}
+
+.calc .btns a { display: block; width: 60px; height: 60px; float: left; margin: 5px; border-radius: 7px;
+    color: white;
+    font-size: 30px; 
+text-align: center; text-decoration: none;  }
+
+.btn_numb {background-color: darkgray; }
+.btn_sign {background-color: skyblue; }
+.calc .btns a.w100 {width: 199px;}
+.calc .btns a.w200 {width: 339px; height: 50px; margin-top: 50px;}
+.calc .btns a.w300 {background-color:red;}
+.calc .btns a:hover{
+    background-color: gold;
+}
+.calc .btns {
+    width: 384px;
+    margin-left: auto; margin-right: auto;
+    
+}
